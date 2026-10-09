@@ -1,0 +1,44 @@
+{
+  "name": "dsh-connect-opencode",
+  "displayName": "DSH Connect OpenCode",
+  "description": "把本机 OpenCode（opencode serve）的免费模型接入 DeepSeek Harness 模型选择器。",
+  "version": "0.1.0",
+  "author": "serra006",
+  "license": "MIT",
+  "keywords": ["dsh-plugin", "deepseek-harness", "opencode", "model-provider", "free"],
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": { "dsh-connect-opencode": "bin/cli.js" },
+  "icon": "icons/icon-128.png",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serra006/dsh-connect-opencode.git"
+  },
+  "homepage": "https://github.com/serra006/dsh-connect-opencode#readme",
+  "bugs": {
+    "url": "https://github.com/serra006/dsh-connect-opencode/issues"
+  },
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "bin", "icons", "cordis.patch.yml", "README.md", "LICENSE"],
+  "engines": { "node": "^22.19.0 || >=24.0.0" },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1 <5.0.0",
+    "@deepseek-ai/dsh-llm": ">=0.1.7 <0.3.0",
+    "@deepseek-ai/dsh-llm-pi-ai": ">=0.1.7 <0.3.0",
+    "@deepseek-ai/dsh-settings": ">=0.1.7 <0.3.0",
+    "@deepseek-ai/dsh-home-paths": ">=0.1.7 <0.3.0",
+    "@deepseek-ai/schemastery": ">=3.18.1 <4.0.0",
+    "@earendil-works/pi-ai": ">=0.85.0 <0.88.0"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

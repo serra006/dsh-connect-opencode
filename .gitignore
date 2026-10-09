@@ -1,0 +1,21 @@
+# Dependencies / package managers
+node_modules/
+.pnpm-store/
+
+# Build / packaging artifacts
+*.tgz
+dist/
+
+# Local caches & scratch
+_npmcache*/
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Plugin runtime data (never ship a user's local state)
+startup-trace.log
