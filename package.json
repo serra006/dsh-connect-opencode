@@ -2,7 +2,7 @@
   "name": "dsh-connect-opencode",
   "displayName": "DSH Connect OpenCode",
   "description": "把本机 OpenCode（opencode serve）的免费模型接入 DeepSeek Harness 模型选择器。",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "serra006",
   "license": "MIT",
   "keywords": ["dsh-plugin", "deepseek-harness", "opencode", "model-provider", "free"],
